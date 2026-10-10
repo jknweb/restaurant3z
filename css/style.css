@@ -362,8 +362,8 @@ body.menu-ouvert { overflow: hidden; }
   min-height: calc(100vh - var(--entete-h));
   display: grid;
   align-items: center;
-  background: var(--ebene);
-  color: var(--ivoire);
+  background: var(--ivoire);
+  color: var(--ebene);
   isolation: isolate;
   overflow-x: clip;
 }
@@ -371,34 +371,42 @@ body.menu-ouvert { overflow: hidden; }
   .ouverture { min-height: calc(100svh - var(--entete-h) - 1.75rem); }
 }
 
-/* Fond : la salle, avec un lent zoom continu */
+/* Fond clair : un grand monogramme 3Z en filigrane, avec un lent zoom continu */
 .ouverture__fond {
   position: absolute;
   inset: 0;
   z-index: -2;
   overflow: hidden;
   margin: 0;
+  display: grid;
+  place-items: center end;
+  pointer-events: none;
 }
-.ouverture__fond img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 45%;
-  transform-origin: 40% 60%;
+.ouverture__filigrane {
+  font-family: var(--titres);
+  font-style: italic;
+  font-weight: 300;
+  font-size: clamp(22rem, 52vw, 52rem);
+  line-height: 0.8;
+  letter-spacing: -0.06em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px rgb(122 95 46 / 0.2);
+  margin-right: -4vw;
+  transform-origin: 70% 50%;
   animation: lent-zoom 26s ease-in-out infinite alternate;
 }
 @keyframes lent-zoom {
   from { transform: scale(1); }
-  to   { transform: scale(1.12) translate3d(-1%, -1%, 0); }
+  to   { transform: scale(1.1) translate3d(-1.5%, -1%, 0); }
 }
 .ouverture::before {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: -3;
   background:
-    radial-gradient(ellipse 70% 60% at 30% 50%, rgb(23 19 15 / 0.35), rgb(23 19 15 / 0.82) 75%),
-    linear-gradient(0deg, rgb(23 19 15 / 0.95) 0%, transparent 35%);
+    radial-gradient(circle at 74% 48%, rgb(196 164 108 / 0.28), transparent 38%),
+    linear-gradient(180deg, #f4efe6 0%, var(--ivoire) 100%);
 }
 
 .ouverture__grille {
@@ -415,13 +423,13 @@ body.menu-ouvert { overflow: hidden; }
   place-items: center;
   width: 3.75rem;
   height: 3.75rem;
-  border: 1px solid rgb(196 164 108 / 0.7);
+  border: 1px solid rgb(122 95 46 / 0.6);
   border-radius: 50%;
   font-family: var(--titres);
   font-size: 1.35rem;
   font-style: italic;
   letter-spacing: -0.04em;
-  color: var(--laiton);
+  color: var(--laiton-fonce);
   margin-bottom: 1.25rem;
 }
 .ouverture__lieu {
@@ -429,7 +437,7 @@ body.menu-ouvert { overflow: hidden; }
   font-weight: 500;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--ivoire-doux);
+  color: #5d544a;
   margin-bottom: 1.25rem;
 }
 .ouverture__titre {
@@ -442,18 +450,19 @@ body.menu-ouvert { overflow: hidden; }
 .ouverture__titre em {
   font-style: italic;
   font-weight: 300;
-  color: var(--laiton);
+  color: var(--laiton-fonce);
 }
 .ouverture .filet {
   width: clamp(8rem, 16vw, 12rem);
   height: 1.1rem;
   margin: clamp(1.5rem, 3vw, 2.25rem) 0;
+  color: var(--laiton-fonce);
 }
 .ouverture__texte {
   font-size: var(--t-grand);
   line-height: 1.5;
   max-width: 34ch;
-  color: var(--ivoire-doux);
+  color: #4a4239;
   margin-bottom: 2rem;
 }
 .ouverture__actions {
@@ -462,7 +471,7 @@ body.menu-ouvert { overflow: hidden; }
   align-items: center;
   gap: 1rem 1.75rem;
 }
-.ouverture__actions a:not(.bouton) { color: var(--ivoire); font-size: var(--t-petit); }
+.ouverture__actions a:not(.bouton) { color: var(--ebene); font-size: var(--t-petit); }
 
 /* L'assiette : ronde, en lente rotation, avec un halo de laiton */
 .ouverture__assiette {
@@ -477,14 +486,14 @@ body.menu-ouvert { overflow: hidden; }
   position: absolute;
   inset: -7%;
   border-radius: 50%;
-  border: 1px solid rgb(196 164 108 / 0.35);
+  border: 1px solid rgb(122 95 46 / 0.35);
 }
 .ouverture__assiette::after {
   content: "";
   position: absolute;
   inset: -14%;
   border-radius: 50%;
-  border: 1px dashed rgb(196 164 108 / 0.18);
+  border: 1px dashed rgb(122 95 46 / 0.3);
   animation: tourne 90s linear infinite reverse;
 }
 .ouverture__assiette-cadre {
@@ -492,7 +501,7 @@ body.menu-ouvert { overflow: hidden; }
   inset: 0;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 2.5rem 5rem -1.5rem rgb(0 0 0 / 0.75), 0 0 0 0.5rem rgb(23 19 15 / 0.6);
+  box-shadow: 0 2.5rem 4rem -1.5rem rgb(67 21 25 / 0.45), 0 0 0 0.5rem #fff;
 }
 .ouverture__assiette img {
   width: 100%;
@@ -507,8 +516,8 @@ body.menu-ouvert { overflow: hidden; }
   left: -6%;
   top: 8%;
   z-index: 2;
-  background: var(--ivoire);
-  color: var(--ebene);
+  background: var(--ebene);
+  color: var(--ivoire);
   padding: 0.75rem 1rem;
   font-size: 0.8125rem;
   line-height: 1.35;
@@ -528,12 +537,12 @@ body.menu-ouvert { overflow: hidden; }
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  filter: drop-shadow(0 0.75rem 1rem rgb(0 0 0 / 0.5));
+  filter: drop-shadow(0 0.75rem 1rem rgb(46 74 59 / 0.3));
   animation: flotte 8s ease-in-out infinite alternate;
 }
 .feuille--1 { width: clamp(3rem, 6vw, 5.5rem); right: 3%; top: 10%; --r: 18deg; }
 .feuille--2 { width: clamp(2.25rem, 4vw, 3.75rem); right: 38%; bottom: 16%; --r: -32deg; animation-duration: 9.5s; animation-delay: -3s; }
-.feuille--3 { width: clamp(4rem, 8vw, 7rem); left: -1.5rem; bottom: 6%; --r: 140deg; animation-duration: 11s; animation-delay: -6s; filter: blur(2px) drop-shadow(0 0.75rem 1rem rgb(0 0 0 / 0.5)); opacity: 0.8; }
+.feuille--3 { width: clamp(4rem, 8vw, 7rem); left: -1.5rem; bottom: 6%; --r: 140deg; animation-duration: 11s; animation-delay: -6s; filter: blur(2px) drop-shadow(0 0.75rem 1rem rgb(46 74 59 / 0.3)); opacity: 0.85; }
 @keyframes flotte {
   from { transform: translate3d(0, 0, 0) rotate(var(--r, 0deg)); }
   to   { transform: translate3d(0.5rem, -1.1rem, 0) rotate(calc(var(--r, 0deg) + 8deg)); }
@@ -581,7 +590,7 @@ body.menu-ouvert { overflow: hidden; }
   right: var(--gouttiere);
   bottom: 1.25rem;
   font-size: 0.75rem;
-  color: rgb(238 232 222 / 0.6);
+  color: #6b6156;
   margin: 0;
 }
 
@@ -642,7 +651,7 @@ body.menu-ouvert { overflow: hidden; }
 .ouverture [data-profondeur] { translate: calc(var(--px, 0) * var(--p, 0) * 1px) calc(var(--py, 0) * var(--p, 0) * 1px); transition: translate 0.6s var(--courbe); }
 
 /* La section qui suit laisse de la place à la pastille */
-.ouverture + .section { padding-top: calc(var(--e-l) + 3rem); }
+.ouverture + .section { padding-top: calc(var(--e-l) + 3rem); border-top: 1px solid rgb(23 19 15 / 0.1); }
 
 /* Apparitions discrètes au défilement */
 .js .apparait {
@@ -744,7 +753,7 @@ body.menu-ouvert { overflow: hidden; }
   display: grid;
   grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
   background: var(--feuille-profonde);
-  border: 1px solid rgb(196 164 108 / 0.35);
+  border: 1px solid rgb(122 95 46 / 0.35);
 }
 .carte__colonnes {
   padding: clamp(1.5rem, 5vw, 4rem);
@@ -1196,7 +1205,7 @@ body.menu-ouvert { overflow: hidden; }
   .js .ouverture__lieu,
   .js .ouverture__pastille { opacity: 1; transform: none; }
   .js .ouverture__assiette { opacity: 1; scale: 1; }
-  .ouverture__fond img,
+  .ouverture__filigrane,
   .ouverture__assiette img,
   .ouverture__assiette::after,
   .ouverture__note,
