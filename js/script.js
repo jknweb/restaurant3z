@@ -306,6 +306,29 @@
     });
   }
 
+  /* ---------- Profondeur de l'ouverture au mouvement de la souris ---------- */
+  function initProfondeur() {
+    var section = document.querySelector('[data-ouverture]');
+    if (!section || reduitMouvement || !window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+    var attente = false;
+    section.addEventListener('pointermove', function (e) {
+      if (attente) return;
+      attente = true;
+      requestAnimationFrame(function () {
+        var r = section.getBoundingClientRect();
+        var x = (e.clientX - r.left) / r.width - 0.5;
+        var y = (e.clientY - r.top) / r.height - 0.5;
+        section.style.setProperty('--px', x.toFixed(3));
+        section.style.setProperty('--py', y.toFixed(3));
+        attente = false;
+      });
+    });
+    section.addEventListener('pointerleave', function () {
+      section.style.setProperty('--px', 0);
+      section.style.setProperty('--py', 0);
+    });
+  }
+
   /* ---------- Année du pied de page ---------- */
   function initAnnee() {
     document.querySelectorAll('[data-annee]').forEach(function (el) {
@@ -316,6 +339,7 @@
   initMenu();
   initHorairesJour();
   initMouvement();
+  initProfondeur();
   initLienActif('.navigation__lien');
   initLienActif('.sommaire-carte a');
   initGalerie();

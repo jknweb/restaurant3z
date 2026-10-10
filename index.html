@@ -9,11 +9,11 @@
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Restaurant 3Z, Gombe, Kinshasa">
   <meta property="og:description" content="Déjeuner et dîner avenue Roi Baudouin, de midi à 23 h 30.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=70">
   <meta property="og:locale" content="fr_CD">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70" imagesrcset="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=600&amp;q=70 900w, https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70 1600w, https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=2400&amp;h=1600&amp;q=70 2400w" imagesizes="100vw">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70" imagesrcset="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=1200&amp;q=65 900w, https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70 1600w, https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=2400&amp;h=1600&amp;q=70 2400w" imagesizes="100vw">
   <link rel="preconnect" href="https://images.unsplash.com">
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
@@ -78,33 +78,72 @@
   <main id="contenu">
 
     <!-- ===== Ouverture ===== -->
-    <section class="ouverture" aria-labelledby="titre-ouverture">
-      <picture class="ouverture__photo">
-        <!-- Photo provisoire (Unsplash), à remplacer par une photo du 3Z -->
-        <img src="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70"
-             srcset="https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=600&amp;q=70 900w, https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70 1600w, https://images.unsplash.com/photo-1663530761401-15eefb544889?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=2400&amp;h=1600&amp;q=70 2400w"
+    <section class="ouverture" aria-labelledby="titre-ouverture" data-ouverture>
+      <svg width="0" height="0" class="visuellement-cache" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="degrade-feuille" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#5f8a5a"/>
+            <stop offset="1" stop-color="#2e4a3b"/>
+          </linearGradient>
+        </defs>
+        <symbol id="forme-feuille" viewBox="0 0 60 100">
+          <path d="M30 2C52 22 59 58 30 98 1 58 8 22 30 2Z" fill="url(#degrade-feuille)"/>
+          <path d="M30 8v86M30 34l12-9M30 50l14-10M30 66l12-9M30 34l-12-9M30 50l-14-10M30 66l-12-9" fill="none" stroke="#a9c49a" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round"/>
+        </symbol>
+      </svg>
+
+      <figure class="ouverture__fond">
+        <!-- Photo provisoire (Unsplash), à remplacer par la salle du 3Z -->
+        <img src="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70"
+             srcset="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=1200&amp;q=65 900w, https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1600&amp;h=1067&amp;q=70 1600w, https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=2400&amp;h=1600&amp;q=70 2400w"
              sizes="100vw" width="1600" height="1067" alt="" fetchpriority="high">
-      </picture>
-      <div class="conteneur ouverture__contenu">
-        <p class="ouverture__lieu">18, avenue Roi Baudouin, Gombe</p>
-        <h1 class="ouverture__titre" id="titre-ouverture">La table du soir, <em>à Gombe.</em></h1>
-        <svg class="filet" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h22l8-6v12l8-6h4l8-6v12l8-6h4l8-6v12l8-6h34"/></svg>
-        <p class="ouverture__texte">Le Restaurant 3Z reçoit pour le déjeuner et le dîner, de midi à 23&nbsp;h&nbsp;30, du lundi au samedi.</p>
-        <div class="ouverture__actions">
-          <a class="bouton bouton--laiton" href="#reservation">Réserver une table</a>
-          <a href="carte.html">Voir la carte</a>
+      </figure>
+
+      <svg class="feuille feuille--1" viewBox="0 0 60 100" aria-hidden="true" focusable="false" data-profondeur style="--p: 18"><use href="#forme-feuille"/></svg>
+      <svg class="feuille feuille--2" viewBox="0 0 60 100" aria-hidden="true" focusable="false" data-profondeur style="--p: 10"><use href="#forme-feuille"/></svg>
+      <svg class="feuille feuille--3" viewBox="0 0 60 100" aria-hidden="true" focusable="false" data-profondeur style="--p: 26"><use href="#forme-feuille"/></svg>
+
+      <div class="conteneur ouverture__grille">
+        <div class="ouverture__contenu">
+          <span class="ouverture__embleme" aria-hidden="true">3Z</span>
+          <p class="ouverture__lieu">Restaurant, Gombe, Kinshasa</p>
+          <h1 class="ouverture__titre" id="titre-ouverture">La table du soir, <em>à Gombe.</em></h1>
+          <svg class="filet" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h22l8-6v12l8-6h4l8-6v12l8-6h4l8-6v12l8-6h34"/></svg>
+          <p class="ouverture__texte">Le Restaurant 3Z reçoit pour le déjeuner et le dîner, 18, avenue Roi Baudouin.</p>
+          <div class="ouverture__actions">
+            <a class="bouton bouton--laiton" href="#reservation">Réserver une table</a>
+            <a href="carte.html">Voir la carte</a>
+          </div>
         </div>
+
+        <figure class="ouverture__assiette" data-profondeur style="--p: -8">
+          <div class="ouverture__assiette-cadre">
+            <!-- Photo provisoire (Unsplash), à remplacer par un plat signature du 3Z -->
+            <img src="https://images.unsplash.com/photo-1519077336050-4ca5cac9d64f?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=900&amp;q=70"
+                 srcset="https://images.unsplash.com/photo-1519077336050-4ca5cac9d64f?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=500&amp;h=500&amp;q=70 500w, https://images.unsplash.com/photo-1519077336050-4ca5cac9d64f?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=900&amp;h=900&amp;q=70 900w"
+                 sizes="(max-width: 56rem) 62vw, 34rem" width="900" height="900" alt="Assiette dressée vue du dessus (photo provisoire)">
+          </div>
+          <figcaption class="ouverture__note"><strong>Midi et soir</strong>12&nbsp;h à 23&nbsp;h&nbsp;30, du lundi au samedi</figcaption>
+        </figure>
       </div>
-      <p class="ouverture__legende">Photo provisoire</p>
+
+      <a class="ouverture__pastille" href="#reservation" aria-label="Réserver une table">
+        <svg class="anneau" viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+          <path id="cercle-pastille" d="M60 60m-47 0a47 47 0 1 1 94 0a47 47 0 1 1-94 0" fill="none"/>
+          <text><textPath href="#cercle-pastille" textLength="292" lengthAdjust="spacing">Réserver une table · Réserver une table ·</textPath></text>
+        </svg>
+        <svg class="fleche" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v15M6 13l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+      </a>
+      <p class="ouverture__legende">Photos provisoires</p>
     </section>
 
     <!-- ===== La maison ===== -->
     <section class="section maison" id="maison" aria-labelledby="titre-maison">
       <div class="conteneur maison__grille">
         <figure class="maison__photo apparait">
-          <img src="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1200&amp;h=1500&amp;q=70" srcset="https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=800&amp;h=1000&amp;q=70 800w, https://images.unsplash.com/photo-1709548145082-04d0cde481d4?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1200&amp;h=1500&amp;q=70 1200w" sizes="(max-width: 52rem) 90vw, 45vw" width="1200" height="1500" alt="Salle de restaurant aux lumières tamisées, tables dressées pour le soir (photo provisoire)" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1698614082118-8e6eaecb08ef?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1200&amp;h=1500&amp;q=70" srcset="https://images.unsplash.com/photo-1698614082118-8e6eaecb08ef?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=800&amp;h=1000&amp;q=70 800w, https://images.unsplash.com/photo-1698614082118-8e6eaecb08ef?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=1200&amp;h=1500&amp;q=70 1200w" sizes="(max-width: 52rem) 90vw, 45vw" width="1200" height="1500" alt="Salle de restaurant aux lumières tamisées, tables dressées pour le soir (photo provisoire)" loading="lazy">
           <div class="maison__photo-secondaire">
-            <img src="https://images.unsplash.com/photo-1519077336050-4ca5cac9d64f?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=600&amp;h=600&amp;q=70" width="600" height="600" alt="Assiette dressée, vue de près (photo provisoire)" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1547478267-54ce493dd7d6?auto=format&amp;fit=crop&amp;crop=entropy&amp;w=600&amp;h=600&amp;q=70" width="600" height="600" alt="Assiette dressée, vue de près (photo provisoire)" loading="lazy">
           </div>
           <figcaption>Photos provisoires, à remplacer par la salle et les plats du 3Z.</figcaption>
         </figure>
