@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La carte, Restaurant 3Z, Gombe</title>
+  <meta name="description" content="Carte du Restaurant 3Z à Gombe, Kinshasa : entrées, plats, grillades, desserts et boissons.">
+  <meta name="theme-color" content="#17130f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+  <p class="bandeau-maquette">Maquette de présentation&nbsp;: photos, carte et textes «&nbsp;à confirmer&nbsp;» provisoires.</p>
+
+  <!-- ===== En-tête (futur parts/header.html) ===== -->
+  <header class="entete">
+    <div class="conteneur entete__barre">
+      <a class="marque" href="index.html" aria-label="Restaurant 3Z, accueil">
+        <span class="marque__monogramme" aria-hidden="true">3Z</span>
+        <span class="marque__nom">Gombe, Kinshasa</span>
+      </a>
+
+      <nav class="navigation" id="navigation" aria-label="Navigation principale">
+        <ul class="navigation__liste">
+          <li><a class="navigation__lien" href="index.html#maison">La maison</a></li>
+          <li><a class="navigation__lien" href="carte.html" aria-current="page">La carte</a></li>
+          <li><a class="navigation__lien" href="index.html#galerie">Galerie</a></li>
+          <li><a class="navigation__lien" href="index.html#reservation">Réserver</a></li>
+          <li><a class="navigation__lien" href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="navigation__pied">
+          <p>18, avenue Roi Baudouin, Gombe</p>
+          <a class="bouton bouton--laiton" href="index.html#reservation">Réserver une table</a>
+        </div>
+      </nav>
+
+      <p class="entete__horaires" data-horaires-jour>Lundi au samedi, <strong>12&nbsp;h à 23&nbsp;h&nbsp;30</strong></p>
+      <a class="bouton bouton--laiton entete__reserver" href="index.html#reservation">Réserver une table</a>
+      <button class="bascule-menu" type="button" aria-expanded="false" aria-controls="navigation">
+        <span class="bascule-menu__icone" aria-hidden="true"></span>
+        <span class="bascule-menu__texte">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <header class="page-entete">
+      <div class="conteneur">
+        <h1>La carte</h1>
+        <p>Carte d'exemple pour la présentation. Les plats et les prix seront remplacés par la carte réelle du 3Z.</p>
+        <svg class="filet" viewBox="0 0 120 14" aria-hidden="true" focusable="false"><path d="M0 7h22l8-6v12l8-6h4l8-6v12l8-6h4l8-6v12l8-6h34"/></svg>
+      </div>
+    </header>
+
+    <nav class="sommaire-carte" aria-label="Catégories de la carte">
+      <ul class="conteneur">
+        <li><a href="#entrees">Pour commencer</a></li>
+        <li><a href="#plats">Plats</a></li>
+        <li><a href="#grillades">Grillades</a></li>
+        <li><a href="#accompagnements">Accompagnements</a></li>
+        <li><a href="#desserts">Desserts</a></li>
+        <li><a href="#boissons">Boissons</a></li>
+      </ul>
+    </nav>
+
+    <div class="carte-complete">
+      <div class="conteneur">
+      <section class="carte-complete__categorie" id="entrees" aria-labelledby="titre-entrees">
+        <div>
+          <h2 id="titre-entrees">Pour commencer</h2>
+          <p>Petites assiettes à partager ou à garder pour soi.</p>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Makayabu en salade</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Poisson salé effiloché, oignon rouge, piment doux, huile de palme.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Beignets de plantain</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Plantain mûr, sauce pimentée maison.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Brochettes de bœuf</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Marinade gingembre et ail, oignons grillés.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Soupe de poisson du fleuve</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Bouillon parfumé au citron vert et aux herbes.</p>
+            </li>
+        </ul>
+      </section>
+      <section class="carte-complete__categorie" id="plats" aria-labelledby="titre-plats">
+        <div>
+          <h2 id="titre-plats">Plats</h2>
+          <p>Servis avec un accompagnement au choix.</p>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Liboke de capitaine</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Poisson du fleuve cuit en feuilles de bananier, chikwangue.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Poulet à la moambe</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Sauce noix de palme, riz blanc, pondu.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Pondu et poisson salé</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Feuilles de manioc mijotées, aubergine, ail.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Ngolo à l'étouffée</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Poisson-chat, tomate, oignon, piment.</p>
+            </li>
+        </ul>
+      </section>
+      <section class="carte-complete__categorie" id="grillades" aria-labelledby="titre-grillades">
+        <div>
+          <h2 id="titre-grillades">Grillades</h2>
+          <p>Cuites au feu de bois, à la commande.</p>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Ntaba grillé</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Chèvre grillée, bananes plantains frites.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Tilapia braisé</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Poisson entier, sauce oignon et piment.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Côtes d'agneau</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Jus réduit, légumes de saison.</p>
+            </li>
+        </ul>
+      </section>
+      <section class="carte-complete__categorie" id="accompagnements" aria-labelledby="titre-accompagnements">
+        <div>
+          <h2 id="titre-accompagnements">Accompagnements</h2>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Chikwangue</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Pain de manioc cuit en feuille.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Riz blanc</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Riz parfumé.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Bananes plantains frites</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Plantain mûr.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Frites de patate douce</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+            </li>
+        </ul>
+      </section>
+      <section class="carte-complete__categorie" id="desserts" aria-labelledby="titre-desserts">
+        <div>
+          <h2 id="titre-desserts">Desserts</h2>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Ananas rôti</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Caramel au gingembre, glace vanille.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Fondant au chocolat</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Chocolat noir, crème légère.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Salade de fruits du jour</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Selon le marché.</p>
+            </li>
+        </ul>
+      </section>
+      <section class="carte-complete__categorie" id="boissons" aria-labelledby="titre-boissons">
+        <div>
+          <h2 id="titre-boissons">Boissons</h2>
+          <p>La carte des vins et des cocktails sera ajoutée après confirmation.</p>
+        </div>
+        <ul class="plats">
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Jus de gingembre maison</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Bissap glacé</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Infusion d'hibiscus, menthe.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Bières locales</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Selon disponibilité.</p>
+            </li>
+            <li class="plat">
+              <div class="plat__ligne"><span class="plat__nom">Vins au verre</span><span class="plat__points" aria-hidden="true"></span><span class="plat__prix">Prix à confirmer</span></div>
+              <p class="plat__description">Sélection du moment.</p>
+            </li>
+        </ul>
+      </section>
+        <div class="carte__lien">
+          <a class="bouton bouton--laiton" href="index.html#reservation">Réserver une table</a>
+          <p class="carte__avertissement">Allergies et régimes particuliers : à signaler lors de la réservation.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Pied de page (futur parts/footer.html) ===== -->
+  <footer class="pied">
+    <div class="conteneur">
+      <div class="pied__haut">
+        <div class="pied__marque">
+          <p class="pied__monogramme" aria-hidden="true">3Z</p>
+          <p>Restaurant 3Z<br>Déjeuner et dîner à Gombe.</p>
+        </div>
+        <div>
+          <h2>Adresse</h2>
+          <address>18, avenue Roi Baudouin<br>Gombe, Kinshasa<br>République démocratique du Congo</address>
+        </div>
+        <div>
+          <h2>Horaires</h2>
+          <p>Lundi au samedi<br>12&nbsp;h à 23&nbsp;h&nbsp;30</p>
+        </div>
+        <nav aria-label="Pied de page">
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="index.html#maison">La maison</a></li>
+            <li><a href="carte.html">La carte</a></li>
+            <li><a href="index.html#galerie">Galerie</a></li>
+            <li><a href="index.html#reservation">Réserver</a></li>
+            <li><a href="mentions.html">Mentions légales</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="pied__bas">
+        <p>© <span data-annee>2026</span> Restaurant 3Z</p>
+        <p>Maquette, photos provisoires sous licence Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
