@@ -21,7 +21,7 @@ index.html          Accueil : ouverture, la maison, extrait de la carte, galerie
 carte.html          Carte complète par catégories
 mentions.html       Mentions légales (provisoires)
 css/style.css       Variables (palette, typo, espacements) puis composants et sections
-js/script.js        Menu mobile, animation d'entrée, apparitions, visionneuse, validation de la réservation
+js/script.js        Menu mobile, animation d'entrée, apparitions, visionneuse, validation de la réservation et envoi sur WhatsApp
 assets/fonts/       Fraunces et Work Sans (woff2 locaux, licence SIL OFL)
 assets/favicon.svg  Monogramme 3Z
 ```
@@ -50,7 +50,7 @@ Polices : Fraunces (titres), Work Sans (texte). Signature : le filet de laiton �
 - Événements, privatisation, traiteur : la section existe dans `index.html` avec l'attribut `hidden`.
 - Accessibilité et parking (trouvés sur une fiche publique, à vérifier).
 - Moyens de paiement, informations légales pour `mentions.html`.
-- Canal d'envoi des réservations : message WhatsApp pré-rempli ou système de réservation.
+- Numéro WhatsApp du restaurant pour les réservations, à renseigner dans `js/script.js` (`RESERVATION.whatsapp`, format international, chiffres seulement). Tant qu'il est vide, WhatsApp s'ouvre avec le message prêt et le visiteur choisit le destinataire.
 
 Sources consultées : [booked.ai](https://booked.ai/restaurants/restaurant-3z) (adresse, horaires, gamme de prix, ambiance), [Yandex Maps](https://yandex.com/maps/org/128990790190/) (adresse).
 
@@ -66,6 +66,6 @@ Le code est organisé pour correspondre à un thème bloc (voir le skill du proj
 | Sections sombres (Ébène, Kola, Feuille de manioc) | Variations de section (`styles/sections/*.json`) |
 | Ligne `.plat` (nom, points, prix, description) | Type de contenu « Plat » ou motif de carte modifiable dans l'éditeur |
 | Galerie `.mosaique` | Bloc Galerie natif + style de bloc |
-| Formulaire de réservation | Lien WhatsApp ou extension reconnue (formulaires ou réservations) |
+| Formulaire de réservation (envoi par WhatsApp pré-rempli) | Même script, numéro WhatsApp en réglage modifiable par le client |
 | Réglages `HORAIRES` de `script.js` | Options du thème ou réglages du site, modifiables par le client |
 | Section « Événements » masquée | Motif à insérer si le client propose des événements |

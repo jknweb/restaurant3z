@@ -1035,7 +1035,9 @@ body.menu-ouvert { overflow: hidden; }
 .formulaire__confirmation dl { display: grid; grid-template-columns: auto 1fr; gap: 0.4rem 1.5rem; margin: 1.25rem 0; font-size: var(--t-petit); }
 .formulaire__confirmation dt { color: var(--ivoire-doux); }
 .formulaire__confirmation dd { margin: 0; }
-.formulaire__confirmation .bouton { margin-top: 0.5rem; color: var(--ivoire); }
+.formulaire__confirmation-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 0.5rem; }
+.formulaire__confirmation .bouton--contour { color: var(--ivoire); }
+.icone-whatsapp { width: 1.15rem; height: 1.15rem; flex: none; }
 
 @media (max-width: 56rem) {
   .reservation__grille { grid-template-columns: 1fr; }

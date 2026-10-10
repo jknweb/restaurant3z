@@ -15,6 +15,14 @@
     joursAvance: 90
   };
 
+  /* Envoi des réservations par WhatsApp.
+     Numéro du restaurant au format international, chiffres seulement
+     (exemple : '243812345678'). À confirmer avec le client. Tant qu'il est vide,
+     WhatsApp s'ouvre avec le message prêt et le visiteur choisit le destinataire. */
+  var RESERVATION = {
+    whatsapp: ''
+  };
+
   /* ---------- Menu mobile ---------- */
   function initMenu() {
     var bouton = document.querySelector('.bascule-menu');
@@ -290,6 +298,15 @@
         recap.appendChild(dt);
         recap.appendChild(dd);
       });
+
+      // Message WhatsApp pré-rempli
+      var message = 'Bonjour, je souhaite réserver une table au Restaurant 3Z.\n\n' +
+        lignes.map(function (l) { return l[0] + ' : ' + l[1]; }).join('\n') +
+        '\n\nMerci de me confirmer la réservation.';
+      var numero = RESERVATION.whatsapp.replace(/[^\d]/g, '');
+      var url = 'https://wa.me/' + numero + '?text=' + encodeURIComponent(message);
+      confirmation.querySelector('[data-lien-whatsapp]').href = url;
+      window.open(url, '_blank', 'noopener');
 
       form.hidden = true;
       confirmation.hidden = false;
