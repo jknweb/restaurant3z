@@ -682,7 +682,7 @@ body.menu-ouvert { overflow: hidden; }
   margin: 0;
 }
 .maison__photo img {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
   width: 100%;
 }
@@ -1066,12 +1066,12 @@ body.menu-ouvert { overflow: hidden; }
 .contact__liste dt { font-size: 0.8125rem; color: #5d544a; }
 .contact__liste dd { margin: 0.15rem 0 0; }
 .contact__photo { margin: 0; }
-.contact__photo img { aspect-ratio: 4 / 5; object-fit: cover; width: 100%; }
+.contact__photo img { aspect-ratio: 1; object-fit: cover; width: 100%; }
 .contact__actions { margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 1rem; }
 .contact .bouton--contour:hover { background: var(--ebene); color: var(--ivoire); border-color: var(--ebene); }
 @media (max-width: 52rem) {
   .contact__grille { grid-template-columns: 1fr; }
-  .contact__photo img { aspect-ratio: 16 / 10; }
+  .contact__photo img { aspect-ratio: 4 / 3; }
 }
 
 /* --------------------------------------------------------------------------
