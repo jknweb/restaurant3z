@@ -20,7 +20,7 @@
      (exemple : '243812345678'). À confirmer avec le client. Tant qu'il est vide,
      WhatsApp s'ouvre avec le message prêt et le visiteur choisit le destinataire. */
   var RESERVATION = {
-    whatsapp: ''
+    whatsapp: '243844122084'
   };
 
   /* ---------- Menu mobile ---------- */

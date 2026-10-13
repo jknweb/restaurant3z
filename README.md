@@ -24,6 +24,7 @@ css/style.css       Variables (palette, typo, espacements) puis composants et se
 js/script.js        Menu mobile, animation d'entrée, apparitions, visionneuse, validation de la réservation et envoi sur WhatsApp
 assets/fonts/       Fraunces et Work Sans (woff2 locaux, licence SIL OFL)
 assets/favicon.svg  Monogramme 3Z
+images/             Dossier pour les photos du restaurant (salle, plats, façade)
 ```
 
 ## Direction artistique : « La table du soir à Gombe »
@@ -38,9 +39,12 @@ assets/favicon.svg  Monogramme 3Z
 
 Polices : Fraunces (titres), Work Sans (texte). Signature : le filet de laiton à trois « Z », tracé à l'ouverture de l'accueil. Un seul moment de mouvement (le filet se trace, la photo s'éclaircit), désactivé si le visiteur demande moins d'animations.
 
+## Réservations et contact
+
+Tous les boutons et liens « Réserver » et « Contact » ouvrent WhatsApp au +243 844 122 084 avec un message pré-rempli. Le formulaire de réservation envoie aussi sa demande détaillée sur ce numéro (réglage `RESERVATION.whatsapp` dans `js/script.js`).
+
 ## Informations à confirmer auprès du client
 
-- Téléphone et WhatsApp (aucun numéro fiable en ligne).
 - Horaires complets : fermeture du dimanche, heure de dernière réservation.
 - Type de cuisine et carte réelle avec prix. La carte actuelle est un **exemple** ; tous les prix affichent « Prix à confirmer ».
 - Histoire de la maison, nom du chef, signification de « 3Z ».
@@ -50,7 +54,6 @@ Polices : Fraunces (titres), Work Sans (texte). Signature : le filet de laiton �
 - Événements, privatisation, traiteur : la section existe dans `index.html` avec l'attribut `hidden`.
 - Accessibilité et parking (trouvés sur une fiche publique, à vérifier).
 - Moyens de paiement, informations légales pour `mentions.html`.
-- Numéro WhatsApp du restaurant pour les réservations, à renseigner dans `js/script.js` (`RESERVATION.whatsapp`, format international, chiffres seulement). Tant qu'il est vide, WhatsApp s'ouvre avec le message prêt et le visiteur choisit le destinataire.
 
 Sources consultées : [booked.ai](https://booked.ai/restaurants/restaurant-3z) (adresse, horaires, gamme de prix, ambiance), [Yandex Maps](https://yandex.com/maps/org/128990790190/) (adresse).
 
